@@ -1,6 +1,6 @@
-package com.sam.dictionaryapp.data
+package com.sam.dictionaryapp.data.repository
 
-import com.sam.dictionaryapp.data.remote.Definition
+import com.sam.dictionaryapp.data.model.Definition
 import com.sam.dictionaryapp.data.remote.DictionaryApi
 import javax.inject.Inject
 

@@ -49,6 +49,9 @@ dependencies {
     // Hilt Navigation
     implementation(libs.androidx.hilt.navigation.compose)
 
+    //Preference data store
+    implementation(libs.androidx.datastore.preferences)
+
    //Material icons
     implementation(libs.androidx.material.icons.extended)
     //Room Database (Using KSP)

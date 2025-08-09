@@ -1,18 +1,17 @@
-package com.sam.dictionaryapp.presentation
+package com.sam.dictionaryapp.presentation.viewmodel
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.sam.dictionaryapp.data.DictionaryRepository
-import com.sam.dictionaryapp.data.remote.Definition
+import com.sam.dictionaryapp.data.model.Definition
+import com.sam.dictionaryapp.data.repository.DictionaryRepository
 import dagger.hilt.android.lifecycle.HiltViewModel
 import jakarta.inject.Inject
 import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.delay
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.asStateFlow
 import kotlinx.coroutines.launch
-import kotlinx.coroutines.time.delay
-import kotlinx.coroutines.delay
 
 @HiltViewModel
 class DictionaryViewModel @Inject constructor(

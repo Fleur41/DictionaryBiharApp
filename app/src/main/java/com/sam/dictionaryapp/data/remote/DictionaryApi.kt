@@ -1,5 +1,6 @@
 package com.sam.dictionaryapp.data.remote
 
+import com.sam.dictionaryapp.data.model.Definition
 import retrofit2.http.GET
 import retrofit2.http.Path
 

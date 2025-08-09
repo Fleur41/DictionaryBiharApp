@@ -1,4 +1,4 @@
-package com.sam.dictionaryapp.data.remote
+package com.sam.dictionaryapp.data.model
 
 data class Definition (
     val word: String,

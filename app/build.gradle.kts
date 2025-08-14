@@ -66,7 +66,13 @@ dependencies {
     //Retrofit + Gson
     implementation(libs.retrofit)
     implementation(libs.converter.gson)
+    //Glide for image loading
+    implementation(libs.glide)
 
+    //Exoplayer for loading videos
+    //implementation("androidx.media3:media3-exoplayer:1.8.0")
+    //implementation("androidx.media3:media3-ui:1.8.0")
+    //implementation("androidx.media3:media3-common:1.8.0")
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.lifecycle.runtime.ktx)
     implementation(libs.androidx.activity.compose)

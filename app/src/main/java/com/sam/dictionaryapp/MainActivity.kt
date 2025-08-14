@@ -26,11 +26,12 @@ import dagger.hilt.android.AndroidEntryPoint
 @AndroidEntryPoint
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
+        // Ensure splash theme doesn't reappear when returning to app
+        setTheme(R.style.Theme_DictionaryApp)
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContent {
             DictionaryAppTheme {
-//
                 val navController = rememberNavController()
                 val settingsViewModel = hiltViewModel<SettingsViewModel>()
                 val theme by settingsViewModel.theme.collectAsState()
@@ -38,12 +39,7 @@ class MainActivity : ComponentActivity() {
                 DictionaryTheme(theme = theme){
                     val startDestination = NavigationDestination.Dictionary
                     AppNavigation( startDestination = startDestination)
-//                    DictionaryScreen(
-//                        navController = navController
-//                    )
-//                    dictionaryNavGraph(
-//                        navController = navController
-//                    )
+
                 }
             }
         }

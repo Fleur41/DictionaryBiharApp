@@ -37,6 +37,14 @@ class SavedViewModel @Inject constructor(
     private val _searchResults = MutableStateFlow<List<SavedWordEntity>>(emptyList())
     val searchResults: StateFlow<List<SavedWordEntity>> = _searchResults.asStateFlow()
 
+    // UPDATED: Real-time search functionality
+    init {
+        viewModelScope.launch (Dispatchers.IO){
+            _searchQuery.collect { query ->
+                searchSavedWords(query)
+            }
+        }
+    }
     // Update search query and perform search
     fun searchSavedWords(query: String) {
         _searchQuery.value = query

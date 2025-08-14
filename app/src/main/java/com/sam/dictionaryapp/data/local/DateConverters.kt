@@ -6,7 +6,7 @@ import java.util.Date
 class DateConverters {
     @TypeConverter
     fun fromTimeStamp(value: Long?): Date? {
-        return  value?.let { Date(it) }
+        return value?.let { Date(it) }
     }
 
     @TypeConverter

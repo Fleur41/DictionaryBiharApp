@@ -3,6 +3,7 @@ agp = "8.11.1"
 coilCompose = "2.6.0"
 converterGson = "3.0.0"
 datastorePreferences = "1.1.7"
+glide = "4.16.0"
 hiltAndroidCompiler = "2.57"
 hiltNavigationCompose = "1.2.0"
 kotlin = "2.0.21"
@@ -32,6 +33,7 @@ androidx-room-runtime = { module = "androidx.room:room-runtime", version.ref = "
 coil-compose = { group = "io.coil-kt", name = "coil-compose", version.ref = "coilCompose" }
 #coil-compose = { module = "io.coil-kt.coil3:coil-compose", version.ref = "coilCompose" }
 converter-gson = { module = "com.squareup.retrofit2:converter-gson", version.ref = "converterGson" }
+glide = { module = "com.github.bumptech.glide:glide", version.ref = "glide" }
 hilt-android = { module = "com.google.dagger:hilt-android", version.ref = "hiltAndroidCompiler" }
 hilt-android-compiler = { module = "com.google.dagger:hilt-android-compiler", version.ref = "hiltAndroidCompiler" }
 junit = { group = "junit", name = "junit", version.ref = "junit" }
